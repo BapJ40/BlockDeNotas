@@ -70,7 +70,7 @@ textoNotas.forEach((nota, index)=> {
     muestraDeNotas.setAttribute("onclick", `editaNota(${index})`);
     //Agregamos el texto que tiene la nota agrega solo la primera línea de la nota
     const primerosCaracteres = nota.substring(0, 96);
-    muestraDeNotas.textContent = primerosCaracteres + "...";
+    muestraDeNotas.textContent = primerosCaracteres.split("\n")[0] + "...";
     //busca el div padre para introducirlo dentro de el. UPAAAA
     const contenedorNotas = document.querySelector(".Contenedor-notas");
     //y por ultimo agregamos el div
