@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+.boton-circula {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0069d9;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.boton-circula:hover {
+  background-color: #005bae;
+}
+
+.flechita {
+  display: flex;
+  align-items: center;
+  margin-right: 36.5%; /* Margen relativo al ancho del contenedor */
+  padding-left: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 650px) {
+  .flechita {
+    margin-right: 2%; /* Ajusta el margen según tus necesidades */
+  }
+}
+
+.encabezado {
+  background-color: #0069d9;
+  color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-family: "Rubik Mono One";
+  user-select: none;
+}
+
+@media (max-width: 650px) {
+  .encabezado {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 502px) {
+  .encabezado {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 424px) {
+  .encabezado {
+    font-size: 0.9em;
+  }
+}
+
+.Contenedor-notas{
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.muestra-notas {
+    background-color: #DDE9F3;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: "Kanit";
+    padding-left: 5px;
+    padding-right: 10px;
+    text-align: justify;
+    border-bottom: 3px solid #0069d9;
+}
+
+.muestra-notas:hover {
+    background-color: #005bae;
+    transition: background-color 0.5s; 
+    color: white;
+}
+
+textarea {
+    height: calc(100vh - 190px);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btnGuardar{
+    display: block;
+    margin: 20px auto;
+    background-color: #FCDD5A;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    user-select: none;
+}
+
+.btnGuardar:hover{
+    background-color: #FCD70B;
+}
+
+.caja-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja-btn button{
+  margin: 0 10px;
+}
+
+.btnActualizar, .btnBorrar{
+  margin: 20px 60px;
+  background-color: #FCDD5A;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  user-select: none;
+}
+
+.btnActualizar:hover, .btnBorrar:hover{
+    background-color: #FCD70B;
+}
+
+.btnBorrar{
+    background-color: #FF7F50;
+}
+
+.btnBorrar:hover{
+    background-color: #FF6347;
+}
+
+body{
+    background-color: #DDE9F3;
+}
+
+html {
+    min-width: 400px;
+}
